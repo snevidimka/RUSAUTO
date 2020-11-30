@@ -1,0 +1,294 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter.ttf');
+}
+
+@import 'variables';
+@import 'main';
+
+
+
+/* Header */
+.header {
+  flex-wrap: wrap;
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  padding: 2px 24px;
+  box-sizing: border-box;
+  background-color: rgb(219, 195, 195);
+  align-items: center;
+}
+ 
+.btn {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 10px; 
+  color: rgb(252, 248, 248);
+  padding: 12px 14px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.general {background-color: #4CAF50;}
+.general:hover {background: #46a049;}
+
+.auto {background-color: #4CAF50;}
+.auto:hover {background-color: #46a049;}
+
+.check-in {background-color: #f44336;}
+.check-in:hover {background: #da190b;}
+
+.login {background-color:  #2196F3;}
+.login:hover {background: #0e75ca;}
+
+.logo {
+  width: 150px;
+  height: 48px;
+  cursor: pointer;
+  margin-right: 10px;
+  border: 4px double black;
+  background: #4CAF50;
+}
+
+.img {
+  width: 500px;
+  height: 250px;
+}
+  
+.dropdown {
+  position: absolute;
+  display: none;
+  z-index: 100;
+  top: 24px;
+  left: 0px;
+  width: 100%;
+  padding: 0px;
+}
+
+.mainButton {
+  height: auto;
+}
+
+.mainButton:hover .dropdown {
+  display: block;
+}
+
+.itemList {
+  color: rgb(252, 248, 248);
+  cursor: pointer;
+  border: 1px solid green;
+  border-top: none;
+  padding: 8px 0px;
+  list-style-type: none;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #4CAF50;
+}
+
+.itemList:hover {background: #46a049;}
+
+.username {
+  margin: 0 auto;
+  color: #8d0f08;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Slider */
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+.imgSlide {
+  height: 150px;
+  width: 100%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+/* Content */
+.main {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: auto;
+  margin-bottom: 10px;
+  padding-bottom: 50px;
+
+}
+
+.btnBar {
+ width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: 10px;
+  height: auto;
+  justify-content: space-around;
+  align-items: baseline;
+
+}
+
+.sidebar {
+  padding-top: 30px;
+  margin-left: 16px;
+  margin-bottom: 10px;
+}
+
+.number {
+  padding: 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 220px;
+  margin-right: 9px;
+  text-align: center;
+  font-family: arial;
+  color: grey;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.h4 {
+  margin: auto;
+}
+
+.price {
+  color: grey;
+  font-size: 16px;
+}
+
+.checked {
+  color: yellow;
+}
+
+.BigCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  color: grey;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 15px;
+  max-width: 700px;
+  max-height: 700px;
+}
+
+
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 8px;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(219, 195, 195);
+  flex-direction: row;
+  position: fixed;
+  bottom: 0px;
+}
+
+
+
+/* Form */
+* {box-sizing: border-box}
+
+.container {
+  margin: auto;
+  width: 50%;
+  padding: 16px;
+  border: 1px solid rgb(207, 176, 176);
+  background-color: rgb(219, 195, 195);
+  color: rgb(134, 63, 63);
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.registerbtn {
+  background-color: #4CAF50;
+  padding: 16px 20px;
+  margin: auto;
+  cursor: pointer;
+  opacity: 0.9;
+  border: none;
+  width: 100%;
+}
+
+.registerbtn:hover {
+  background: #46a049;
+  opacity: 1;
+}
